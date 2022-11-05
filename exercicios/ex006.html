@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #button {
+        font-size: 12pt;
+        padding: 30px;
+        margin-bottom: 10px;    
+    }
+</style>
+<body>
+    <h1>
+        Working with numbers.
+    </h1>
+    <button id = "button" onclick="buttonPopUp()">
+        Begin the sum
+    </button> <br>
+
+    <span id = 'result'>
+        The result goes here
+    </span>
+
+    <script>
+
+        function buttonPopUp() {
+            let number1 = parseInt(window.prompt('Choose one number'));
+            let number2 = parseInt(window.prompt('Choose another number'));
+            let res = window.document.getElementById('result');
+            res.innerHTML = `The sum of <mark>${number1}</mark> and <mark>${number2}</mark> is equal to <strong>${number1 + number2}!</strong>`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #button {
+        font-size: 12pt;
+        padding: 30px;
+        margin-bottom: 10px;
+        
+    }
+</style>
+<body>
+    <h1>
+        Working with numbers.
+    </h1>
+    <button id = "button" onclick="buttonPopUp()">
+        Click here to do math!
+    </button> <br>
+
+    <span id = 'result'></span>
+
+    <script>
+        //window.alert('Welcome to my page!');
+
+        function buttonPopUp() {
+            let number = window.prompt('Choose a number');
+            let res = window.document.getElementById('result');
+            res.innerHTML = `The double of ${number} is ${number * 2} and the half is ${number / 2}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script id="scr_01">
+    `TEXTO COMPLETAMENTE ARBITRARIO`;
+  </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Title</title>
+  </head>
+  <style>
+    .tile{
+      flex:1;
+      background-color: red;
+      margin: 4px;
+      height: 20px;
+      width: 20px;
+    }
+
+  </style>
+
+  <body>
+    <span id="container"> A </span>
+  </body>
+
+  <script>
+
+    function createNewM(w, h, defaultValue = "."){
+    let M = [];
+    for(let y = 0; y < h; y++){
+      let L= [];
+      for (let x = 0; x < w; x++){
+        L.push(defaultValue);
+      }
+      M.push(L);
+    }
+    return M;
+  }
+  let w = 8;
+  let h = 8;
+  createNewM(h,w)
+  </script>
+
+  <script>
+    function updateScreen() {
+      const container = document.getElementById("container")
+      let r = "<table>";
+      for(let line of M) {
+          r += `<tr>`;
+          for(let element of line) {
+              let c = "";
+              if(element.toUpperCase() === 'p') {
+                c+= 'player';
+              }
+              r += `
+              <td class = "tile"> 
+                S 
+              </td>`;
+          }
+          r += `</tr>`
+      }
+
+      r += "</table>"
+      container.innerHTML = r;
+    }
+    updateScreen();
+  
+  </script>
+
+</html>

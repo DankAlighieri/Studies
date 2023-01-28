@@ -41,14 +41,14 @@ console.log(nomeDoMes(11));
 // 5 return whos bigger 
 
 function biggerOrEqual(x, y) {
-  if (x > y) return `${x} is bigger than ${y}` 
-  else if (x < y) return `${y} is bigger than ${x}` 
-  else return `${x} is esqual to ${y}` 
+  if (x > y) return `${x} is bigger than ${y}`
+  else if (x < y) return `${y} is bigger than ${x}`
+  else return `${x} is esqual to ${y}`
 }
 
-console.log(biggerOrEqual(1,2));
-console.log(biggerOrEqual(2,1));
-console.log(biggerOrEqual(1,1));
+console.log(biggerOrEqual(1, 2));
+console.log(biggerOrEqual(2, 1));
+console.log(biggerOrEqual(1, 1));
 
 // 6 accept a boolean or a number and return the inverse of the input.
 
@@ -56,8 +56,8 @@ function inverso(valor) {
   const tipo = typeof valor;
   if (tipo === 'boolean') return !valor
   else if (tipo === 'number') return -valor
-  else 
-    return`Booleano ou numero esperados. Tipo ${tipo} nao aceito.`
+  else
+    return `Booleano ou numero esperados. Tipo ${tipo} nao aceito.`
 
 }
 console.log(inverso(false));
@@ -66,14 +66,14 @@ console.log(inverso('1'));
 
 // 7 Get 4 params (number, min, max, includes) return if 1st param is in beteween the 2nd and 3rd params, the 4th param is optional and states if the operation will include <=/=> in the logical operation
 
-function inBetween(number, min, max, inclusive) {   
-  if (inclusive === undefined){
-      if (number > min && number < max) return 'verdadeiro 1'
-      else return 'falso 1'
+function inBetween(number, min, max, inclusive) {
+  if (inclusive === undefined) {
+    if (number > min && number < max) return 'verdadeiro 1'
+    else return 'falso 1'
   }
   else if (inclusive === true) {
-      if (number >= min && number <= max) return 'verdadeiro 2'
-      else return 'falso 2'
+    if (number >= min && number <= max) return 'verdadeiro 2'
+    else return 'falso 2'
   }
 }
 /*    
@@ -93,29 +93,28 @@ function multiply(x, y) {
   return resultado
 }
 
-console.log(multiply(5,100));
+console.log(multiply(5, 100));
 
 // 9 function that receive 2 params (element, n) the 1st will repeat n amount of time and return an array of n elements
 
 function repeat(element, n) {
-  let resultado = [] 
-  for (i = 0; i < n; i++){
+  let resultado = []
+  for (i = 0; i < n; i++) {
     resultado.push(element)
   }
   return resultado
 }
 
 console.log(repeat('aloha', 10));
+  // 10 function that receive 1 param (n) and returns n '+'
 
-// 10 function that receive 1 param (n) and returns n '+'
-
-function plusRepeats(n) {
-  let repeated = ''
-  for (i = 0; i < n; i++) {
-    repeated += '+'
+  function plusRepeats(n) {
+    let repeated = ''
+    for (i = 0; i < n; i++) {
+      repeated += '+'
+    }
+    return repeated
   }
-  return repeated
-}
 
 console.log(plusRepeats(2));
 console.log(plusRepeats(3));
@@ -125,26 +124,149 @@ console.log(plusRepeats(3));
 function returnsFirstAndLast(array) {
   resultado = []
   resultado.push(array[0])
-  resultado.push(array[(array.length-1)])
+  resultado.push(array[(array.length - 1)])
   return resultado
 }
 
-array = ['first','middle', 'last']
+array = ['first', 'middle', 'last']
 console.log(returnsFirstAndLast(array));
 
 // 12 receives an object and one object's property as params and return the object without the property entered 
 
 function removeProperty(obj, prop) {
   const copia = Object.assign({}, obj)
-  delete  copia[prop]
+  delete copia[prop]
 
   return copia
 }
 
 console.log(removeProperty(
   obj1 = {
-  nome: 'whatever', 
-  idade: 13
-}, 'nome'));
+    nome: 'whatever',
+    idade: 13
+  }, 'nome'));
 
-// 13 
+// 13 receives an object and returns an array of arrays in which the arrays consists of the keys:values pairs of the Object
+
+let obj = {
+  nome: "Maria",
+  profissao: "Desenvolvedora de Software"
+}; // must return [["nome", "maria"], ["profissao", "Desenvolvedora de Software"]];
+
+function objetoParaArray(x) {
+    return Object.entries(x);
+}
+
+console.log(objetoParaArray(obj));
+
+// 14 Function that receives an array of numbers and returns those which are even AND have even indexes ([0], [2], [4]...)
+
+let array1 = [1, 2, 3, 4] // returns []
+let array2 = [10, 70, 22, 43] // returns [10,22]
+
+function somenteOsParesDeIndicesPares(array) {
+    array_final = []
+    for (let i = 0; i < array.length; i++){
+        if (array[i]%2 == 0) {
+            if (i%2 == 0) {
+                array_final.push(array[i])
+            }
+        }
+    }
+    return array_final
+}
+
+console.log(somenteOsParesDeIndicesPares(array1));
+console.log(somenteOsParesDeIndicesPares(array2));
+
+// 15 Function to return if received year is a leap year
+
+function leapYear(year) {
+  if (year%4 == 0) {
+      if (year%100 == 0) {
+          if (year%400 == 0) {
+              return true
+          } else {
+              return false
+          }
+      } else return true
+  } else return false
+}
+
+/* 
+function leapYear(year) {
+    if (year%4 != 0) {
+        return false
+    } 
+
+    if (year%100 != 0) {
+         return true
+    } 
+
+    if (year%400 != 0) {
+        return false
+    } 
+
+    return true} 
+    */
+
+console.log(leapYear(2020));
+console.log(leapYear(2100));
+
+// 16 function that receives an array and returns the total sum of all the numbers in it
+
+let array3 = [10, 10, 10]
+let array4 = [15, 15, 15, 15]
+
+function somarNumero(array) {
+    resultado = 0
+    for (let i = 0; i< array.length; i++){
+        resultado += array[i]
+    }
+    return resultado
+}
+console.log(somarNumero(array1));
+console.log(somarNumero(array2));
+
+// 17 function that receives an array of objects and returns the sum of the price key.
+
+let prod1 = [
+  {nome: 'Online Journal', category: "Information", price: 89.99},
+  {nome: 'Cinema', category: 'Entertainment', price: 150}
+] // must return 239.99
+
+let prod2 = [
+  {nome: 'Galaxy S20', category: "Electronics", price: 3599.99},
+  {nome: 'Macbook Pro', category: 'Electronics', price: 30999.90}
+] // must return 34599.89
+
+
+function returnsPrice(array) {
+  let price = array.map(a => a.price)
+  let resultado = 0
+  for (let i = 0; i < price.length; i++) {
+      resultado += price[i]
+  }
+  return resultado
+}
+
+console.log(returnsPrice(prod1));
+console.log(returnsPrice(prod2));
+
+// 18 returns the medium of the total sum of the array's numbers
+
+let conjunto1 = [0,10]// returns 5
+let conjunto2 = [1, 2, 3, 4, 5] // returns 3
+
+function returnsMedium(array) {
+    let resultado = 0
+    for (let i = 0; i < array.length; i++) {
+        resultado+=array[i]
+    }
+    return (resultado/array.length)
+}
+
+console.log(returnsMedium(conjunto1));
+console.log(returnsMedium(conjunto2));
+
+// 19 function to return the area of a triangle

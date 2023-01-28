@@ -1,13 +1,10 @@
-obj1 = {
-    nome: 'whatever', idade: 13,
-    nome: 'whatever', idade: 13,
-    nome: 'whatever', idade: 13,
-    nome: 'whatever', idade: 13
+// 19 function to return the area of a triangle
+
+function areaTriangulo(base, height) {
+    area = (base * height)/2
+    return (`The area of this tirangle is ${area.toFixed(2)}`)
 }
 
-function rop(o, p) {
-    obj = {}
-    console.log(o);
-}
-
-rop(obj1)
+console.log(areaTriangulo(10, 15));
+console.log(areaTriangulo(7, 9));
+console.log(areaTriangulo(9.25, 13.1));

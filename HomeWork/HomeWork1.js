@@ -270,3 +270,77 @@ console.log(returnsMedium(conjunto1));
 console.log(returnsMedium(conjunto2));
 
 // 19 function to return the area of a triangle
+
+function areaTriangulo(base, height) {
+    area = (base * height)/2
+    return (`The area of this tirangle is ${area.toFixed(2)}`)
+}
+
+console.log(areaTriangulo(10, 15));
+console.log(areaTriangulo(7, 9));
+console.log(areaTriangulo(9.25, 13.1));
+
+// 20 function that gets an array and returns the lowest number of it.
+
+let conjunto3 = [10, 5, 35, 65]
+let conjunto4 = [5, -15, 50, 3]
+
+function menorNumero(array) {
+    let lowest = array[0]
+    for (i in array)
+        if(array[i] < lowest) {
+            lowest = array[i]
+        }
+    return lowest
+}
+
+console.log(menorNumero(conjunto3));
+console.log(menorNumero(conjunto4));
+
+// 21 guess the random number
+
+function getRandomNumber(input) {
+  const generateRandomNumber = Math.floor(Math.random() * 10)
+  if (input == generateRandomNumber) {
+      return `Congratz, the correct number was ${generateRandomNumber}`
+  } else {
+      return `I'm sorry, but the correct number was ${generateRandomNumber}`
+  }
+
+}
+
+console.log(getRandomNumber(3));
+console.log(getRandomNumber(4));
+
+// 22 function to count the ammount of words in a string
+
+let frase = 'Eu sou uma frase'
+let frase2 = 'Frase aqui'
+function contarPalavras(stri) {
+    let resultado = stri.split(' ')
+    return resultado.length
+}
+
+console.log(contarPalavras(frase));
+console.log(contarPalavras(frase2));
+
+// 23 Function to return the ammuont of repetition in a string (MMUST BE CASE SENSITIVE)
+
+
+
+let frase1 = "A sorte favorece os audazes" // 2
+let frase3 = "Conhece-te a ti mesmo" // 1
+
+function contaCaractere(caractere, frase) {
+    let obj1 = frase.split('');
+    let resultado = []
+    for (let i in obj1){
+        if (caractere == obj1[i])
+        resultado.push(obj1[i])
+    }
+    return resultado.length
+}
+
+console.log(contaCaractere('r', frase1));
+console.log(contaCaractere('c', frase3));
+

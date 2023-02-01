@@ -1,5 +1,4 @@
 // 1 function to greet param
-//
 
 function greetings(name) {
   console.log(`Hello, ${name}!`);
@@ -344,3 +343,91 @@ function contaCaractere(caractere, frase) {
 console.log(contaCaractere('r', frase1));
 console.log(contaCaractere('c', frase3));
 
+// 24 Search for words 
+
+function buscarPalavrasSemelhantes(inicio, palavras) {
+  const resultado = [];
+
+  for (let palavra of palavras) 
+      if (palavra.includes(inicio))
+          resultado.push(palavra)
+          
+  return resultado
+}
+
+// 25 remove vowels
+
+function removerVogais(palavra) {
+  const vogais = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
+
+  vogais.forEach(vogal => palavra = palavra.replace(vogal, ''));
+  
+  return palavra
+}
+
+console.log(removerVogais('Cod3r'));
+console.log(removerVogais('Fundamentos'));
+
+// 26 invert keys and values
+
+function inverter(objeto) {
+  const paresDeChaveValorInvertidos = 
+  Object.entries(objeto).map( parChaveValor => parChaveValor.reverse() )
+  return Object.fromEntries(paresDeChaveValorInvertidos)
+}
+
+const aleatorio = {a: 1, b: 2, c: 3}
+
+console.log(inverter(aleatorio));
+
+// 27 filter by digit quantity
+
+const primeiro = [38, 2, 365, 10, 125, 11]
+const segundo = [5, 9 ,1, 125, 11]
+
+function contarDigitos(array, quantidade) {
+  numeros = array.map(numero => numero.toString())
+  quantidadeDeDigitos = numeros[i].length  
+  resultado = []
+    for ( i in numeros) {
+      if (quantidadeDeDigitos == quantidade)
+        resultado.push(numeros[i])
+    }
+    return resultado
+}
+
+console.log(contarDigitos(primeiro, 2));
+console.log(contarDigitos(segundo, 1));
+
+// 28 return the second largest number of the array
+
+const terceiro = [12, 16, 1, 5]
+const quarto = [8, 4, 6]
+
+function segundoMaior(array) {
+    const maiorNumero = Math.max(...array)
+    array = array.filter(numero => numero != maiorNumero)
+    const segundoMaior = Math.max(...array)
+
+    return segundoMaior
+}
+console.log(segundoMaior(terceiro));
+console.log(segundoMaior(quarto));
+
+// 29 get an object with grades and name, return an object with name and average of best student
+
+const soma = array => array.reduce((acumulador, atual) => acumulador + atual, 0)
+const media = array => soma(array) / array.length
+
+function recerberMelhorEstudante(estudantes) {
+    const estudantesComMedias = Object.entries(estudantes).map( estudante => {
+        const chave = 0,
+            valor = 1
+    return { nome: estudante[chave], media: media(estudante[valor]) }
+    })
+
+    const estudantesOrdenados = estudantesComMedias.sort( (estudanteA, estudanteB) => estudanteB.media - estudanteA.media )
+    const melhorEstudante = estudantesOrdenados[0]
+
+    return melhorEstudante
+}

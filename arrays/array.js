@@ -4,6 +4,8 @@
 console.log(typeof Array, typeof new Array, typeof []);
 
 let aprovados = new Array('bia', 'carlos', 'ana')
+aprovados.sort() // alterando o array original
+console.log(aprovados);
 console.log(aprovados);
 
 aprovados = ['bia', 'carlos', 'ana']
@@ -23,8 +25,7 @@ console.log(aprovados[8] === null);
 
 console.log(aprovados); 
 
-aprovados.sort() // alterando o array original
-console.log(aprovados);
+
 
 delete aprovados[1]
 console.log(aprovados);

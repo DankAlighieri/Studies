@@ -287,9 +287,9 @@ let conjunto4 = [5, -15, 50, 3]
 function menorNumero(array) {
     let lowest = array[0]
     for (i in array)
-        if(array[i] < lowest) {
-            lowest = array[i]
-        }
+      if(array[i] < lowest) {
+        lowest = array[i]
+      }
     return lowest
 }
 

@@ -1,23 +1,16 @@
-let a = 1
-console.log(a);
+const primeiroElemento = arrayOuString => arrayOuString[0]
+const letraMinuscula = letra => letra.toLowerCase()
 
-let p = new Promise(function (cumprirPromessa) {
-    // cumprirPromessa(3) // so eh devolvido um valor, para retornar mais de um valor, eh necessario retornar um objeto
-    // cumprirPromessa({
+new Promise(function (resolve, reject) {
+    // resolve(3) // so eh devolvido um valor, para retornar mais de um valor, eh necessario retornar um objeto
+    // resolve({
     //     x: 3,
     //     y: 4
     // })
-    cumprirPromessa(['Ana', 'Bia', 'Carlos', 'Daniel'])
+    resolve(['Ana', 'Bia', 'Carlos', 'Daniel'])
 })
-
-const primeiroElemento = array => array[0]
-
-const primeiraLetra = string => string[0]
-
-const letraMinuscula = letra => letra.toLowerCase()
-
-p
     .then(primeiroElemento)
-    .then(primeiraLetra) // o valor sera o retorno da chamada then anterior
+    .then(primeiroElemento) // o valor sera o retorno da chamada then anterior
     .then(letraMinuscula)
+    // .then(v => console.log(v))
     .then(console.log)

@@ -26,9 +26,105 @@
                 "file": "Excalidraw/Chain of responsability.md"
               }
             }
+          },
+          {
+            "id": "432af0920d09ce93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/Protocolo HTTP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5da0d9ee90b49e6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/Servidor web.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c1aebadecd2b611b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/Server Side vs Client Side.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ca3927c952f08db4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/Conteúdo Estático vs Dinâmico.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6a0330a6cd1405d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/DNS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e915a4912db6e42a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/HTTPS(eguro).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1e9642f589f319db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/Web Service.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "71aefde069cde69b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web/Protocolo HTTP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -94,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Chain of responsability.md",
+                "file": "Web/Web Service.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Chain of responsability.md",
+                "file": "Web/Web Service.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Chain of responsability.md"
+                "file": "Web/Web Service.md"
               }
             }
           }
@@ -156,12 +252,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d9ab2dc3618baf00",
+  "active": "1e9642f589f319db",
   "lastOpenFiles": [
-    "Excalidraw/Conceitos.md",
-    "Excalidraw/heritage.md",
-    "Excalidraw/Chain of responsability.md",
-    "Untitled.md",
+    "Web/HTTPS(eguro).md",
+    "Web/DNS.md",
+    "Web/Anatomia do IPv4.md",
+    "Web/Protocolo HTTP.md",
+    "Web/Introdução à web.md",
+    "Web/Conteúdo Estático vs Dinâmico.md",
+    "Web/Server Side vs Client Side.md",
+    "Web/Servidor web.md",
+    "images/Pasted Image 20230122221937_404.png",
     "heritage.md"
   ]
 }

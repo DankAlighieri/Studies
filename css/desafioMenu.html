@@ -7,15 +7,100 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-        /* ... */
+        * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        font-family: 'Oswald';
+        font-size: 30px;
+    }
+
+    a, a:visited {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .cabecalho {
+        display: flex;
+        padding: 10px;
+        background-color: rgb(46, 44, 44);
+        justify-content: left;
+        align-items: center;
+    }
+
+    img{
+        width: 300px;
+        padding-right: 15px;
+    }
+
+    .menu-toggle, .fa {
+        display: none;
+        justify-self: right;
+    }
+
+    li {
+        display: inline-block;
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 10px;
+    }
+
+    .menu a:hover {
+        background-color: #fff;
+        padding: 10px;
+        color: rgb(46, 44, 44);
+        border-radius: 20%;
+    }
+    
+    .autenticacao {
+        display: inline-block;
+        margin-left: auto;
+    }
+
+    .autenticacao a {
+        margin-right: 10px;
+    }
+
+
+    .destaque {
+        background-color: rgb(139, 26, 26);
+        padding: 10px;
+        border-radius: 20% ;
+    }
+
+    a:hover .destaque {
+        background-color: #fff;
+        color: rgb(139, 26, 26);
+    }
+
+    
+    @media (max-width: 900px) {
+        .autenticacao {display: none}
+    }
+
+    @media (max-width: 700px) {
+        .menu {display: none;}
+    }
+
+    @media (max-width: 700px) {
+        .menu-toggle, .fa {
+            display: inline-block;
+            justify-self: right;
+        }
+    }
+    
     </style>
 </head>
+
+
 
 <body>
     <header class="cabecalho">
         <div class="logo">
             <a href="#inicio">
-                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo">
             </a>
         </div>
         <button class="menu-toggle">

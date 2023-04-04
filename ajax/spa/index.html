@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Mini SPA</title>
+    <link rel='stylesheet' href='../css/estilo.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        nav {
+            font-size: 2em;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #FFF;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body class="conteudo">
+    <nav>
+        <a href class="series">Séries</a> |
+        <a href class="linguagens">Linguagens</a>
+    </nav>
+    <div class="pagina"></div>
+    <script>
+        $(document).ready(function(){
+            $('a.series, a.linguagens').click(function(e){
+
+                e.preventDefault();
+
+                const pagina = $(this).hasClass('series') ? 'series.html' : 'linguagens.html';
+                $('.pagina').load(pagina);
+                let push = true
+                if(push) {
+                    history.pushState({'.pagina'}, null, pagina)
+                }
+            });
+        });
+    </script>
+</body>

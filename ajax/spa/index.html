@@ -35,9 +35,6 @@
                 const pagina = $(this).hasClass('series') ? 'series.html' : 'linguagens.html';
                 $('.pagina').load(pagina);
                 let push = true
-                if(push) {
-                    history.pushState({'.pagina'}, null, pagina)
-                }
             });
         });
     </script>

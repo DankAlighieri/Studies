@@ -10,17 +10,19 @@
   "author": "Cod3r",
   "license": "ISC",
   "devDependencies": {
-    "@babel/preset-env": "^7.21.4",
-    "babel-core": "^4.7.16",
-    "babel-preset-env": "1.6.1",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-concat": "2.6.1",
-    "gulp-sass": "5.0.0",
-    "gulp-terser": "^2.1.0",
-    "gulp-typescript": "^2.12.2",
-    "gulp-uglify": "3.0.0",
-    "gulp-uglifycss": "^1.1.0",
-    "typescript": "2.8.3"
+    "@babel/preset-env": "",
+    "babel-core": "",
+    "babel-preset-env": "",
+    "gulp": "",
+    "gulp-babel": "",
+    "gulp-concat": "",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "",
+    "gulp-typescript": "",
+    "gulp-uglify": "",
+    "gulp-uglifycss": "",
+    "node-sass": "^8.0.0",
+    "sass": "^1.61.0",
+    "typescript": ""
   }
 }

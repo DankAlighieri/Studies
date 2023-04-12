@@ -14,7 +14,7 @@ function transformacaoCSS() {
 
 function transformacaoHTML() {
     return gulp.src('src/index.html')
-        .pipe(concat('index.min.html'))
+        .pipe(concat('\index.min.html'))
         .pipe(gulp.dest('build'));
 };
 

@@ -16,13 +16,13 @@
     "gulp": "",
     "gulp-babel": "",
     "gulp-concat": "",
-    "gulp-sass": "^5.1.0",
+    "gulp-sass": "",
     "gulp-terser": "",
     "gulp-typescript": "",
     "gulp-uglify": "",
     "gulp-uglifycss": "",
-    "node-sass": "^8.0.0",
-    "sass": "^1.61.0",
+    "node-sass": "",
+    "sass": "",
     "typescript": ""
   }
 }

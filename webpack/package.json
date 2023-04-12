@@ -10,6 +10,14 @@
   "license": "ISC",
   "devDependencies": {
     "webpack": "",
-    "webpack-cli": ""
+    "webpack-cli": "",
+    "css-loader": "",
+    "style-loader": "",
+    "mini-css-extract-plugin": "",
+    "node-sass": "",
+    "sass-loader": "",
+    "cross-env": "",
+    "optimize-css-assets-webpack-plugin": "",
+    "uglifyjs-webpack-plugin": ""
   }
 }

@@ -4,20 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack && node dist/main.js"
+    "start": "webpack-dev-server && node dist/main.js",
+    "build": "cross-env NODE_ENV=production webpack"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "",
-    "webpack-cli": "",
+    "cross-env": "",
     "css-loader": "",
-    "style-loader": "",
+    "css-minimizer-webpack-plugin": "",
     "mini-css-extract-plugin": "",
     "node-sass": "",
     "sass-loader": "",
-    "cross-env": "",
-    "optimize-css-assets-webpack-plugin": "",
-    "uglifyjs-webpack-plugin": ""
+    "style-loader": "",
+    "terser-webpack-plugin": "^5.3.7",
+    "webpack": "",
+    "webpack-cli": "",
+    "file-loader": "^6.2.0"
   }
 }

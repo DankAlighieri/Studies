@@ -1,14 +1,7 @@
 /*!********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/css/estilo.css ***!
-  \********************************************************************************************************************/
-body {
-  background-color: red; }
+  \********************************************************************************************************************/body{background-color:#473d3d;background-image:url(static/chunks/src/assets/images/logo.2cd2da618ab588492e9b.png);background-position:50%;background-repeat:no-repeat;height:100vh}
 
 /*!*********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/sass/index.scss ***!
-  \*********************************************************************************************************************/
-.botao {
-  background-color: #19B3E6;
-  color: #FFF;
-  font-size: 1.8em; }
-
+  \*********************************************************************************************************************/.botao{background-color:#19b3e6;color:#fff;font-size:1.8em}

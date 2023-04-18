@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "cli-table3": "^0.6.2",
+    "jquery": "^3.6.4",
     "loadash": "^1.0.0",
     "lodash": "^4.17.21",
     "node-schedule": "^2.1.1",

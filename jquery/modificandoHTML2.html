@@ -17,6 +17,26 @@
     <p class='numero'>5</p>
 
     <script>
-        // ...
+        $('#div1').append(', 2')
+            .prepend('0, ');
+        $('<span>, 3</span>').appendTo('#div1');
+        $('<span>-1, </span>').prependTo('#div1');
+
+        $('#div2').before('<p>Antes 2</p>');
+        $('#div2').after('<p>Depois 2</p>');
+
+        $('<p>Antes 3</p>').insertBefore('#div3')
+        $('<p>Depois 3</p>').insertAfter('#div3')
+
+        // $('p.numero').wrap('<div>') // cria uma div e encapsula os elementos dentro dessa div
+        $('p.numero').wrapAll('<div id="div4">') // Encapsula todos os elementos dentro de uma unica div com um id especifico
+        $("#div4").empty();
+        $('#div3, #div4').prev().remove()
+
+        // $('<div>Substituto</div>').replaceAll('body > p') // todos os paragrafos dentro do body
+        // $('body > p').replaceWith('<div>Substituto</div>');
+        $('body > p').replaceWith(function() {
+            return $('<div>').html($(this).html());
+        })
     </script>
 </body>

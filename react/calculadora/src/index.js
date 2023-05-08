@@ -9,7 +9,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div>
-      <h1>Calculadora</h1>
+      <h1>Projeto 1</h1>
+      <h3>Calculadora</h3>
       <Calculator />
     </div>
     

@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 import Logo from '../components/templates/logo'
 import Nav from '../components/templates/nav'
-import Home from '../components/home/home'
+import Routes from './routes'
 import Footer from '../components/templates/footer'
 import NavC from '../components/templates/NavC'
 
@@ -15,10 +15,10 @@ export default props =>
     <BrowserRouter>
         <div className="app">
             <Logo />
-            <Nav icon='home' title='Inicio'>
+            <Nav>
                 {/* Refatorar utilizando props.children */}
             </Nav>
-            <Home />
+            <Routes />
             <Footer />
         </div>
     </BrowserRouter>

@@ -9,7 +9,6 @@ import Logo from '../components/templates/logo'
 import Nav from '../components/templates/nav'
 import Routes from './routes'
 import Footer from '../components/templates/footer'
-import NavC from '../components/templates/NavC'
 
 export default props => 
     <BrowserRouter>

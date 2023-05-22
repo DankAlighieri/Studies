@@ -1,6 +1,5 @@
 import './nav.css'
 import React from 'react'
-import NavC from './NavC'
 import { Link } from 'react-router-dom'
 
 export default props => 

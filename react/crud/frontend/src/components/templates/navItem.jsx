@@ -1,1 +1,0 @@
-import './navItem.css'

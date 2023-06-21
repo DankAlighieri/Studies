@@ -1,0 +1,9 @@
+.roxo {
+    padding: 5px;
+    height: 100vh;
+    background-color: #670bbd;
+    color: #fff;
+}
+
+/* modulos de css nao podem alterar elementos do html como h1 ou div
+eh necessario a utilizacao de uma classe. */

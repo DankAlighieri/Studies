@@ -1,5 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -7,27 +6,26 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  produtos:string[] = []
-  menuType:string = "diretor"
+  produtos:string[] = [];
+  menuType:string = "";
 
   constructor() {
     this.produtos = [
       "mouse",
       "teclado",
       "cabo",
-      "font"
+      "fonte"
     ]
   }
 
   ngOnInit(): void {
   }
 
-  adicionar(){
-    this.produtos.pop()
+  adicionar() {
+    this.produtos.push("Felipe")
   }
 
-  remover(index: number){
+  remover(index:number ) {
     this.produtos.splice(index, 1)
   }
-
 }

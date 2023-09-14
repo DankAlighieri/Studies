@@ -6,28 +6,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comp-atributos.component.css']
 })
 export class CompAtributosComponent implements OnInit {
-  estilo:string="disable"
-  corFundo:string ="blue"
-  corDafonte:string = "yellow"
-  item:string =""
-  lista:string[] = []
-  isEnableBlock:boolean = false
+
+  estilo:string = "disable";
+  corFundo:string = "blue";
+  corDaFonte:string = "yellow";
+  item:string = "";
+  lista:string[] = [];
+  isEnable:boolean = true
 
   constructor() { }
-
-  adicionarLista(){
-    this.lista.push(this.item)
-  }
 
   ngOnInit(): void {
   }
 
-  trocar(){
-    if(this.estilo === "disable"){
+  trocar() {
+    if(this.estilo == "disable") {
       this.estilo = "enable"
-    }else{
+    } else{
       this.estilo = "disable"
     }
+  }
+
+  adicionarLista() {
+    this.lista.push(this.item)
   }
 
 }

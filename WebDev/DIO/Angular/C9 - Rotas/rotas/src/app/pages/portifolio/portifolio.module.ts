@@ -11,7 +11,6 @@ import { CardComponent } from './card/card.component';
   exports:[
     CardComponent
   ],
-
   imports: [
     CommonModule
   ]
